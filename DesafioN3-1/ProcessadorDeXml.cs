@@ -28,7 +28,7 @@ namespace DesafioN3_1
             var total = (decimal)0;
             Parallel.ForEach(Xmls, (x) =>
             {
-                total += decimal.Parse(x.GetElementsByTagName("vNF")[0].InnerXml);
+                total += decimal.Parse(x.GetElementsByTagName("vNF")[0].InnerXml.Replace('.', ','));
             });
             return total;
         }
