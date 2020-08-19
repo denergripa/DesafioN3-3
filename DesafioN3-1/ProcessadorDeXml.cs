@@ -31,6 +31,7 @@ namespace DesafioN3_1
                 total += decimal.Parse(x.GetElementsByTagName("vNF")[0].InnerXml.Replace('.', ','));
             });
             return total;
+            //
         }
 
         public void CarregaXmls(string caminho)
